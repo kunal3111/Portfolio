@@ -1,6 +1,6 @@
 @media screen and (max-width: 500px) {
    .left-content h1{
-    font-size: 2.8rem;
+    font-size: 3.2rem;
    } 
 .navigation ul li a{
     font-size: 0.95rem;
@@ -13,9 +13,9 @@
     font-size: 0.9rem;
 }
 }
-@media screen and (max-width: 456px) {
+@media screen and (max-width: 458px) {
    .left-content h1{
-    font-size: 2.1rem;
+    font-size: 2.8rem;
    } 
 .navigation ul li a{
     font-size: 0.7rem;
@@ -30,7 +30,7 @@
 }
 @media screen and (max-width: 420px) {
    .left-content h1{
-    font-size: 2.5rem;
+    font-size: 2.6rem;
    } 
 .navigation ul li a{
     font-size: 0.72rem;
@@ -43,9 +43,9 @@
     font-size: 0.6rem;
 }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 403px) {
    .left-content h1{
-    font-size: 2.1rem;
+    font-size: 2.6rem;
    } 
 .navigation ul li a{
     font-size: 0.6rem;
@@ -56,7 +56,7 @@
     align-content: center;
 }
 .left-content h2{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-weight: 350;
 }
 .right .right-content p,.left .left-content p{
@@ -73,10 +73,10 @@
 }
 @media screen and (max-width: 333px) {
    .left-content h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
    } 
 .navigation ul li a{
-    font-size: 0.6rem;
+    font-size: 0.61rem;
     
 }
 .nav ul li {
