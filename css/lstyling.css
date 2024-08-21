@@ -1,5 +1,9 @@
 .left-content h1{
     font-size: 3rem;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 .left-content h2{
   margin: 0rem 0rem 0rem 0rem;
@@ -19,6 +23,8 @@
 
 .navigation ul{
   list-style: none;
+margin-top: 2.1rem;
+
 }
 .navigation ul li{
 padding: 0.4rem;
@@ -27,6 +33,9 @@ padding: 0.4rem;
 text-decoration: none;  
 font-size: 1.2rem;
 color:var(--secondary);
+font-family: "Bree Serif", serif;
+font-weight: 400;
+font-style: normal;
 }
 .icons{
   margin-left: 5rem;

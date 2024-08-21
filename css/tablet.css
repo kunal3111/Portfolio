@@ -73,6 +73,11 @@ width: 14rem;
     .right-content form{
         padding: 1rem;
     }
+.navigation ul li a {
+    margin: 0 0.3rem;
+    font-size:1rem ;
+
+}
 }
 
   

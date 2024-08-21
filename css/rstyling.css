@@ -1,4 +1,4 @@
-.About p{
+.About p, .tools p{
 margin: 1rem;
 }
 .Projects{
@@ -6,25 +6,26 @@ margin: 1rem;
 }
 .Projects img{
     display: block;
-    max-width: 7.5rem ;
+    max-width: 9.7rem ;
     margin: 1rem;
     /* box-shadow: 2px 2px 20px #006480; */
     animation: hue-rotate 5s infinite linear;
-    border-radius: 1rem;
-    transition: transform 0.2s;
+    border-radius: 0.5rem;
+    /* transition: transform 0.2s; */
 }
 
-.Projects img:hover{
+/* .Projects img:hover{
     transform: translate(0, -10px);
-}
-.Projects .box-1, .box-2, .box-3, .box-4{
-    transition: transform 0.3s;
+}  */
+.Projects .box-1, .box-2, .box-3, .box-4{ 
+    transition: transform 0.4s;
+    border-radius: 0.5rem;
 }
 .Projects .box-1:hover, .box-2:hover, .box-3:hover, .box-4:hover{
-    background-color: transparent;
-    box-shadow: 0px 0px 20px black;
-    border-radius: 1rem;
-    transform: translate(18px, 8px);
+    background-color:transparent;
+    /* box-shadow: 0px 0px 20px black; */
+    transform: translate(5px, -8px);
+    box-shadow: 0px 9px 2px #ffffff;
 }
 
 .Projects .box{
@@ -32,7 +33,7 @@ margin: 1rem;
     margin: 1.89rem;
     align-items: center;
     font-size: 0.7rem;
-    padding: 0.3rem;
+    padding: 1rem;
 
     color: var(--secondary);
 
@@ -50,11 +51,11 @@ margin: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 7rem;
+    margin-top: 5rem;
     background-color: transparent;
-    box-shadow: 0px 0pc 30px black;
-    border-radius: 2.5rem;
-    padding: 2rem;
+    /* box-shadow: 0px 0pc 30px black; */
+    border-radius: 1.5rem;
+    padding: 1.5rem;
 }
 .right-content form h3{
     color: var(--secondary);
@@ -111,3 +112,32 @@ margin: 1rem;
     text-align: center;
     margin-top: 5rem;
 }
+
+.toolsContainer{
+display: flex;
+flex-direction: column;
+padding: 2.2rem;
+border-radius: 1rem;
+margin-top: 4rem;
+
+
+
+}
+.toolIcons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    
+}
+.tools img{
+    background-color:transparent;
+    margin: 0.15rem;
+    border-radius: 0.5rem;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    /* box-shadow: 0px 9px 10px #006480; */
+
+}
+
