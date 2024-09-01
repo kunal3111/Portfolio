@@ -38,8 +38,7 @@ font-weight: 400;
 font-style: normal;
 }
 .icons{
-  margin-left: 5rem;
-  position: fixed;  
+  position: fixed;
   bottom: 4.3rem;
 }
 .icons img{
@@ -51,6 +50,11 @@ font-style: normal;
 .navigation ul li a:hover{
   color: #616574;
 }
-.navigation ul li a:Active{
-color: rgb(255, 0, 0);
+.navigation ul li a.active{
+  color: #616574;
+}
+
+.icons svg:hover{
+  box-shadow: 0px 5px 0px #ffffff;
+ 
 }

@@ -2,7 +2,7 @@
 margin: 1rem;
 }
 .Projects{
-    margin-top: 3.1rem;
+    margin-top: 0rem;
 }
 .Projects img{
     display: block;
@@ -25,7 +25,7 @@ margin: 1rem;
     background-color:transparent;
     /* box-shadow: 0px 0px 20px black; */
     transform: translate(5px, -8px);
-    box-shadow: 0px 9px 2px #ffffff;
+    box-shadow: 0px 9px 0px #ffffff;
 }
 
 .Projects .box{
@@ -111,14 +111,16 @@ margin: 1rem;
   .Resume-download{
     text-align: center;
     margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 
 .toolsContainer{
 display: flex;
 flex-direction: column;
-padding: 2.2rem;
+padding: 1rem;
 border-radius: 1rem;
-margin-top: 4rem;
+margin-bottom: 3rem;
+
 
 
 

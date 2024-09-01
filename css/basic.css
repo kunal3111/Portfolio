@@ -6,6 +6,7 @@
 *{
 margin: 0;
 padding: 0;
+box-sizing: border-box;
 }
 body{
  
@@ -30,10 +31,13 @@ body{
 .right{
     background-color:var(--primary);
     color: var(--secondary);
-    height: 300vh;
+    height: 380vh;
     width: 55%;
-    overflow-y: scroll;
     right: 0;
     position: absolute;
     
+}
+.StickyNavbar{
+    position: static;       
+    display: none;
 }

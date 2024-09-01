@@ -12,6 +12,17 @@
 .right .right-content p,.left .left-content p{
     font-size: 0.9rem;
 }
+.navigation{
+    display: none;
+}
+    .navigation ul{
+        display: none;
+    }
+    .icons svg
+{
+    width: 60px;
+    height: 60px;
+}
 }
 @media screen and (max-width: 458px) {
    .left-content h1{
@@ -26,6 +37,11 @@
 }
 .right .right-content p,.left .left-content p{
     font-size: 0.8rem;
+}
+.icons svg
+{
+    width: 55px;
+    height: 55px;
 }
 }
 @media screen and (max-width: 420px) {
@@ -42,6 +58,24 @@
 .right .right-content p,.left .left-content p{
     font-size: 0.6rem;
 }
+.left-content{
+   margin: 2.5rem 3rem;
+}
+.right-content{
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+}
+.icons svg
+{
+    width: 55px;
+    height: 55px;
+}
+.navigation{
+    display: none;
+}
+    .navigation ul{
+        display: none;
+    }
 }
 @media screen and (max-width: 403px) {
    .left-content h1{
@@ -51,6 +85,7 @@
     font-size: 0.6rem;
     
 }
+
 .nav ul li {
     text-align: center;
     align-content: center;
@@ -67,35 +102,67 @@
 
 }
 .right-content{
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
+    margin-top: 0rem;
+    padding-top: 1.5rem;
 
+}
+.navigation{
+    display: none;
+}
+.navigation ul{
+    display: none;
+}
+.icons svg
+{
+    width: 55px;
+    height: 55px;
 }
 }
 @media screen and (max-width: 333px) {
    .left-content h1{
     font-size: 2.5rem;
    } 
-.navigation ul li a{
+/* .navigation ul li a{
     font-size: 0.61rem;
     
 }
 .nav ul li {
     text-align: center;
     align-content: center;
-}
+} */
 .left-content h2{
     font-size: 0.6rem;
     font-weight: 350;
 }
+.icons{
+    margin-top: 1.2rem;
+
+}
+.icons svg
+{
+    width: 50px;
+    height: 50px;
+}
+/* .icons svg path{
+color: red;
+} */
 .right .right-content p,.left .left-content p{
     font-size: 0.61rem;
 }
 .left-content{
     margin: 1rem 3rem;
+    margin-bottom: 0rem;
 
 }
 .right-content{
     padding: 2rem 1rem;
 
 }
+.navigation{
+    display: none;
+}
+    .navigation ul{
+        display: none;
+    }
 }
