@@ -17,7 +17,7 @@ body .lrsections{
 .StickyNavbar{
     display: block;
     width: 97vw;
-    height: 3rem;
+    height: 3.5rem;
     align-content: center;
     top: 0;
     position:sticky;
@@ -30,7 +30,7 @@ body .lrsections{
 .StickyNavbar h4{
     margin-left: 2rem;
     color:var(--secondary);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
    
 }
