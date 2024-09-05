@@ -2,32 +2,48 @@
     font-size: 3rem;
     font-family: "Bree Serif", serif;
     font-weight: 400;
+    animation: hue-rotate 5s infinite linear;
+
     font-style: normal;
 
+}
+.fIcon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+.fIcon svg{
+  display: block;
+  max-width: 3rem;
+}
+.fIcon svg:hover{
+  fill:rgb(255, 255, 255);
 }
 .left-content h2{
   margin: 0rem 0rem 0rem 0rem;
   font-weight: 500;
 }
 .left-content p{
-  margin: 1rem 0rem;
+  margin: 0.3rem 0rem;
   font-size: 0.95rem;
 
 }
 .navigation{
   display: flex;
   flex-direction: column;
-  height: 3rem;
+  height: 1.5rem;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .navigation ul{
   list-style: none;
-margin-top: 2.1rem;
 
 }
 .navigation ul li{
-padding: 0.4rem;
+padding: 0.3rem;
 }
 .navigation ul li a{
 text-decoration: none;  
@@ -38,15 +54,9 @@ font-weight: 400;
 font-style: normal;
 }
 .icons{
-  position: fixed;
-  bottom: 4.3rem;
+  margin-top: 10rem;
 }
-.icons img{
-  font-size: 0.3rem;
-  opacity: 0.7;
-  padding: 0rem 0.5rem;
 
-}
 .navigation ul li a:hover{
   color: #616574;
 }
@@ -54,7 +64,39 @@ font-style: normal;
   color: #616574;
 }
 
-.icons svg:hover{
-  box-shadow: 0px 5px 0px #ffffff;
- 
+.email-icon {
+  fill: none;
+  stroke: var(--secondary);
+  stroke-width: 2;
+  stroke-miterlimit: 10;
 }
+
+div.icons svg:hover {
+  fill: rgb(255, 255, 255);
+  animation: hue-rotate 5s infinite linear;
+}
+div.icons .email-icon:hover{
+  stroke: white;
+  fill: none;
+
+}
+.left-content img{
+  display: block;
+  max-width: 8rem;
+  border-radius:50%;
+}
+.left-content h1{
+font-size: 2.5rem;
+display: flex;
+} 
+.fIcon svg{
+  position: absolute;
+  top: 2rem;
+  max-width: 2.3rem;
+right:2rem;
+}
+.left-content{
+  justify-content: center;
+}
+
+

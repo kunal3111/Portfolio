@@ -22,8 +22,9 @@ body{
     background-color:var(--primary);
     color: var(--secondary);
     height: 100vh;
-    width: 45%;
+    width: 45vw;
     position: fixed;
+   
     left: 0;
 
 }
@@ -31,11 +32,11 @@ body{
 .right{
     background-color:var(--primary);
     color: var(--secondary);
-    height: 380vh;
-    width: 55%;
+    height:410vh;
+    width: 55vw;
     right: 0;
-    position: absolute;
-    
+    position:absolute;
+    overflow: clip;    
 }
 .StickyNavbar{
     position: static;       
