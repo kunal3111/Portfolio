@@ -7,20 +7,20 @@ color: rgb(0, 153, 153);
 
 }
 
-.fIcon {
+
+
+.typed{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-
+  height: 1rem;
+  width: 45%;
+  margin-bottom: 0.7rem;
 }
-
-
 
 
 
 .left-content h2 {
   margin: 0rem 0rem 0rem 0rem;
+  display: flex;
   font-weight: 300;
 }
 

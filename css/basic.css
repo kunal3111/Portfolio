@@ -91,3 +91,18 @@ body{
       filter: blur(5px);
     }
   }
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotation{
+    /* display: inline-block; */
+    animation: rotate 0.8s 2 linear;
+    animation-delay: 1s;
+  }
+ 
