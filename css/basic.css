@@ -28,6 +28,11 @@ body{
     left: 0;
 
 }
+[data-aos="fade-up"] {
+    transition-duration: 2s; 
+    transition-delay: 0.5s;  
+  }
+  
 
 .right{
     background-color:var(--primary);
@@ -42,3 +47,47 @@ body{
     position: static;       
     display: none;
 }
+
+.blurry-text {
+    text-align: center;
+    -webkit-animation: blurAnimation 3s infinite; /* For Safari and Chrome */
+    -moz-animation: blurAnimation 3s infinite; /* For Firefox */
+    -o-animation: blurAnimation 3s infinite; /* For Opera */
+    animation: blurAnimation 3s infinite; /* Standard */
+  }
+
+  @-webkit-keyframes blurAnimation {
+    0%, 100% {
+      -webkit-filter: blur(0px);
+    }
+    50% {
+      -webkit-filter: blur(5px);
+    }
+  }
+
+  @-moz-keyframes blurAnimation {
+    0%, 100% {
+      -moz-filter: blur(0px);
+    }
+    50% {
+      -moz-filter: blur(5px);
+    }
+  }
+
+  @-o-keyframes blurAnimation {
+    0%, 100% {
+      -o-filter: blur(0px);
+    }
+    50% {
+      -o-filter: blur(5px);
+    }
+  }
+
+  @keyframes blurAnimation {
+    0%, 100% {
+      filter: blur(0px);
+    }
+    50% {
+      filter: blur(5px);
+    }
+  }

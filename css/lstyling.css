@@ -1,36 +1,36 @@
-.left-content h1{
-    font-size: 3rem;
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-    animation: hue-rotate 5s infinite linear;
-
-    font-style: normal;
+.left-content h1 {
+  font-size: 3rem;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+color: rgb(0, 153, 153);
+  font-style: normal;
 
 }
-.fIcon{
+
+.fIcon {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
 
 }
-.fIcon svg{
-  display: block;
-  max-width: 3rem;
-}
-.fIcon svg:hover{
-  fill:rgb(255, 255, 255);
-}
-.left-content h2{
+
+
+
+
+
+.left-content h2 {
   margin: 0rem 0rem 0rem 0rem;
   font-weight: 300;
 }
-.left-content p{
+
+.left-content p {
   margin: 0.3rem 0rem;
   font-size: 0.85rem;
 
 }
-.navigation{
+
+.navigation {
   display: flex;
   flex-direction: column;
   height: 1.5rem;
@@ -38,31 +38,96 @@
   margin-top: 1rem;
 }
 
-.navigation ul{
+.navigation ul {
   list-style: none;
 
 }
-.navigation ul li{
-padding: 0.3rem;
-}
-.navigation ul li a{
-text-decoration: none;  
-font-size: 1.2rem;
-color:var(--secondary);
-font-family: "Bree Serif", serif;
-font-weight: 400;
-font-style: normal;
-}
-.icons{
-  margin-top: 10rem;
+
+.navigation ul li {
+  padding: 0.3rem;
 }
 
-.navigation ul li a:hover{
+.navigation ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--secondary);
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.icons {
+  margin-top: 10rem;
+}
+/* 
+.navigation ul li a:hover {
   color: #616574;
 }
-.navigation ul li a.active{
-  color: #616574;
+
+.navigation ul li a.active {
+  color:rgb(0, 153, 153);
+  transition: 500ms;
+  transform: scale(10px);
+  animation: bounce 0.5s;
+} */
+
+.navigation ul li a {
+  position: relative;
+  color: var(--secondary);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: color 300ms, transform 300ms, background 300ms, box-shadow 300ms;
 }
+
+.navigation ul li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color:rgb(0, 153, 153);
+  transition: width 300ms;
+}
+
+.navigation ul li a:hover {
+  color:rgb(0, 153, 153);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navigation ul li a:hover::before {
+  width: 100%;
+}
+
+.navigation ul li a.active {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  transform: scale(1.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: bounce 0.5s;
+}
+
+.navigation ul li a.active::before {
+  width: 100%;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1.4);
+  }
+  60% {
+    transform: scale(1.3);
+  }
+}
+
+
+
+
 
 .email-icon {
   fill: none;
@@ -76,29 +141,29 @@ div.icons svg:hover {
   fill: rgb(255, 255, 255);
   animation: hue-rotate 5s infinite linear;
 }
-div.icons .email-icon:hover{
+
+div.icons .email-icon:hover {
   stroke: white;
   fill: none;
 
 }
-.left-content img{
+
+.left-content img {
   display: block;
   max-width: 9rem;
-  border-radius:50%;
+  border-radius: 50%;
 }
-.left-content h1{
-font-size: 2.5rem;
-display: flex;
-} 
-.fIcon svg{
-  position: absolute;
-  top: 2rem;
-  max-width: 2.3rem;
-right:2rem;
+
+.left-content h1 {
+  font-size: 2.5rem;
+  display: flex;
+  
 }
 
 
 
-.left-content h2{
+
+
+.left-content h2 {
   font-size: 1.1rem;
 }

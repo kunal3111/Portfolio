@@ -18,7 +18,7 @@ const $bootstrap = document.querySelector('.box-2');
 const $EmojiGallery = document.querySelector('.box-3');
 const $Dominoes = document.querySelector('.box-4');
 const $colorCh = document.querySelectorAll('.colorCh');
-const $links = document.querySelectorAll('.chc')
+const $links = document.querySelectorAll('.chc');
 
 $github.addEventListener('click',()=>{
   window.open('https://github.com/kunal3111', '_blank');
@@ -46,4 +46,32 @@ $EmojiGallery.addEventListener('click', () => {
 });
 $Dominoes.addEventListener('click', () => {
   window.open("https://kunal3111.github.io/Web-programming/dominoes-kunal3111-1/", '_blank');
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const $NavLinks = document.querySelectorAll('ul li a');
+  const $ScrollSections = document.querySelectorAll('.ScrollSection');
+
+  window.onscroll = () => {
+    $ScrollSections.forEach((sec) => {
+      let top = window.scrollY;
+      let offset = sec.offsetTop;
+      let height = sec.offsetHeight;
+      let id = sec.getAttribute('id');
+
+      console.log(`Section: ${id}, Offset: ${offset}, Height: ${height}, ScrollY: ${top}`);
+
+      if (top >= offset && top < offset + height) {
+        $NavLinks.forEach((link) => {
+          link.classList.remove('active');
+          let targetLink = document.querySelector(`ul li a[href*='${id}']`);
+          if (targetLink) {
+            targetLink.classList.add('active');
+          } else {
+            console.error(`No link found for section: ${id}`);
+          }
+        });
+      }
+    });
+  };
 });
