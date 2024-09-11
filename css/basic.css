@@ -1,7 +1,7 @@
 :root{
     --primary:rgb(6, 22, 28);
     --secondary:rgba(255 255 255 / 76%);
-    --gloss:#006480;
+    --gloss:rgb(0, 153, 153);
 }
 *{
 margin: 0;
@@ -48,49 +48,6 @@ body{
     display: none;
 }
 
-.blurry-text {
-    text-align: center;
-    -webkit-animation: blurAnimation 3s infinite; /* For Safari and Chrome */
-    -moz-animation: blurAnimation 3s infinite; /* For Firefox */
-    -o-animation: blurAnimation 3s infinite; /* For Opera */
-    animation: blurAnimation 3s infinite; /* Standard */
-  }
-
-  @-webkit-keyframes blurAnimation {
-    0%, 100% {
-      -webkit-filter: blur(0px);
-    }
-    50% {
-      -webkit-filter: blur(5px);
-    }
-  }
-
-  @-moz-keyframes blurAnimation {
-    0%, 100% {
-      -moz-filter: blur(0px);
-    }
-    50% {
-      -moz-filter: blur(5px);
-    }
-  }
-
-  @-o-keyframes blurAnimation {
-    0%, 100% {
-      -o-filter: blur(0px);
-    }
-    50% {
-      -o-filter: blur(5px);
-    }
-  }
-
-  @keyframes blurAnimation {
-    0%, 100% {
-      filter: blur(0px);
-    }
-    50% {
-      filter: blur(5px);
-    }
-  }
   @keyframes rotate {
     from {
       transform: rotate(0deg);
@@ -103,6 +60,5 @@ body{
   .rotation{
     /* display: inline-block; */
     animation: rotate 0.8s 2 linear;
-    animation-delay: 1s;
+    animation-delay: 700ms;
   }
- 

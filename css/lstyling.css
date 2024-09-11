@@ -2,18 +2,35 @@
   font-size: 3rem;
   font-family: "Bree Serif", serif;
   font-weight: 400;
-color: rgb(0, 153, 153);
+/* color: rgb(0, 153, 153); */
+color: var(--secondary);
   font-style: normal;
 
 }
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgb(0, 153, 153);
+  }
+  50% {
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+  }
+  100% {
+    box-shadow: 0 0 5px rgb(0, 153, 153);
+  }
+}
+
+.glow {
+  animation: glow 2s infinite linear;
+}
+
 
 
 
 .typed{
   display: flex;
-  height: 1rem;
-  width: 45%;
-  margin-bottom: 0.7rem;
+  height: 2rem;
+  align-items: center;  
+  justify-content: center;
 }
 
 
@@ -22,6 +39,8 @@ color: rgb(0, 153, 153);
   margin: 0rem 0rem 0rem 0rem;
   display: flex;
   font-weight: 300;
+  font-size: 1rem;
+
 }
 
 .left-content p {
@@ -57,7 +76,8 @@ color: rgb(0, 153, 153);
 }
 
 .icons {
-  margin-top: 10rem;
+  margin-top: 9.5rem;
+  
 }
 /* 
 .navigation ul li a:hover {
@@ -137,20 +157,21 @@ color: rgb(0, 153, 153);
 }
 
 
+
 div.icons svg:hover {
-  fill: rgb(255, 255, 255);
-  animation: hue-rotate 5s infinite linear;
+  fill:var(--gloss);
 }
 
 div.icons .email-icon:hover {
-  stroke: white;
+  stroke: var(--gloss);
   fill: none;
+
 
 }
 
 .left-content img {
   display: block;
-  max-width: 9rem;
+  max-width: 8.5rem;
   border-radius: 50%;
 }
 
@@ -163,7 +184,3 @@ div.icons .email-icon:hover {
 
 
 
-
-.left-content h2 {
-  font-size: 1.1rem;
-}

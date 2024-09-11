@@ -77,6 +77,10 @@
         position: relative;
         z-index: 2;
     }
+.typed{
+    width: 100%;
+    justify-content: center;
+}
 
     /* .navigation ul {
     display: flex;
