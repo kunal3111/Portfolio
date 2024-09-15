@@ -19,6 +19,11 @@ const $EmojiGallery = document.querySelector('.box-3');
 const $Dominoes = document.querySelector('.box-4');
 const $colorCh = document.querySelectorAll('.colorCh');
 const $links = document.querySelectorAll('.chc');
+const $Resume = document.getElementById('Resume');
+
+$Resume.addEventListener('click',()=>{
+  window.open('https://docs.google.com/document/d/1x4GEzr6TwRsXTN43L4Ou4m0wfQmzPJu5ocDMn7U-oF4/edit?usp=sharinghttps://docs.google.com/document/d/1x4GEzr6TwRsXTN43L4Ou4m0wfQmzPJu5ocDMn7U-oF4/edit?usp=sharing', '_blank');
+})
 
 $github.addEventListener('click',()=>{
   window.open('https://github.com/kunal3111', '_blank');
