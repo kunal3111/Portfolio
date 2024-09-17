@@ -74,7 +74,7 @@
     align-content: center;
     color: rgb(255, 255, 255);
 
-    box-shadow: 2px 2px 20px #006480;
+    /* box-shadow: 2px 2px 20px #006480; */
 }
 
 @keyframes hue-rotate {

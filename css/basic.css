@@ -10,18 +10,13 @@ box-sizing: border-box;
 }
 .loading-screen {
   position: fixed;
-  top: 0;
+ top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+
+  width: 100vw;
   height: 100vh;
   background-color: var(--primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color:White;
-  text-align: center;
+  color: white;
 }
 
 .logo {
@@ -30,18 +25,19 @@ box-sizing: border-box;
 }
 
 .loading-bar {
-  width: 130px;
-  height: 2px;
-  background: #cfcfcf;
+  width: 180px;
+  height: 3px;
+  border-radius: 1rem;
+  background: #ffffff;
   margin-top: 10px;
   position: relative;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .loading-bar::before {
   content: '';
-  width: 68px;
-  height: 2px;
+  width: 80px;
+  height: 4px;
   background: var(--primary);
   position: absolute;
   left: -34px;
@@ -49,21 +45,29 @@ box-sizing: border-box;
   background-color: var(--gloss);
 }
 .loading-animation{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.loading-screen{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.loading-animation h1{
-  font-weight: 400;
-  font-size: 1.5rem;
+
+.loading-animation h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
 }
+
 @keyframes bluebar {
   50% {
       left: 96px;
   }
 }
-
 
 
 #content {
