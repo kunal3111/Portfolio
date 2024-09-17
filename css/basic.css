@@ -1,6 +1,6 @@
 :root{
     --primary:rgb(6, 22, 28);
-    --secondary:rgba(255 255 255 / 76%);
+    --secondary:rgb(222, 220, 220);
     --gloss:rgb(0, 153, 153);
 }
 *{
@@ -8,7 +8,72 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+.loading-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:White;
+  text-align: center;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+.loading-bar {
+  width: 130px;
+  height: 2px;
+  background: #cfcfcf;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-bar::before {
+  content: '';
+  width: 68px;
+  height: 2px;
+  background: var(--primary);
+  position: absolute;
+  left: -34px;
+  animation: bluebar 1.5s infinite ease;
+  background-color: var(--gloss);
+}
+.loading-animation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loading-animation h1{
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+@keyframes bluebar {
+  50% {
+      left: 96px;
+  }
+}
+
+
+
+#content {
+  transition: opacity 0.5s ease-in-out;
+}
+
+
 body{
+  background-color: #000000;
+
  
         font-family: "Poppins", sans-serif;
         font-weight: 400;
@@ -58,7 +123,5 @@ body{
   }
   
   .rotation{
-    /* display: inline-block; */
-    animation: rotate 0.8s 2 linear;
-    animation-delay: 700ms;
+    animation: rotate 0.8s 6 linear;
   }

@@ -20,6 +20,22 @@ const $Dominoes = document.querySelector('.box-4');
 const $colorCh = document.querySelectorAll('.colorCh');
 const $links = document.querySelectorAll('.chc');
 const $Resume = document.getElementById('Resume');
+window.addEventListener('load', function() {
+  setTimeout(function() {
+      document.querySelector('.loading-screen').style.display = 'none';
+      const content = document.getElementById('content');
+      content.style.display = 'block';
+      setTimeout(function() {
+          content.style.opacity = 1;
+          AOS.init();
+      }, 50); 
+      
+  }, 3000); 
+});
+
+
+
+
 
 $Resume.addEventListener('click',()=>{
   window.open('https://docs.google.com/document/d/1x4GEzr6TwRsXTN43L4Ou4m0wfQmzPJu5ocDMn7U-oF4/edit?usp=sharinghttps://docs.google.com/document/d/1x4GEzr6TwRsXTN43L4Ou4m0wfQmzPJu5ocDMn7U-oF4/edit?usp=sharing', '_blank');

@@ -24,10 +24,18 @@
 </head>
 
 <body>
+    <div class="loading-screen">
+        <div class="loading-animation">
+            <h1>Kunal's Portfolio</h1>    
+        
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+    <div id="content" style="opacity: 0;">
+
     <section class="lrsections" >
         <div class="left" id="left">
             <div class="left-content" >
-
                 <img class="glow" data-aos="zoom-in"
                 data-aos-duration="1s" src="./icons/kunalweb (1).png" alt="KunalArora">
                 <h1 data-aos="fade-right"
@@ -51,7 +59,7 @@
                 </div>
 
                 <div class="icons" >
-                    <svg data-aos="zoom-in" class="rotation" id="github" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    <svg data-aos="zoom-in" class="rotation" id="github" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink "data-aos-delay="500"
                         viewBox="0,0,256,256" width="50px" height="50px" fill="var(--secondary)">
                         <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                             stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
@@ -64,7 +72,7 @@
                             </g>
                         </g>
                     </svg>
-                    <svg  data-aos="zoom-in" class="rotation" id="linkedin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    <svg  data-aos-delay="500" data-aos="zoom-in" class="rotation" id="linkedin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0,0,256,256" width="50px" height="50px" fill="var(--secondary)">
                         <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                             stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
@@ -77,14 +85,14 @@
                             </g>
                         </g>
                     </svg>
-                    <svg  data-aos="zoom-in" id="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px" class="email-icon rotation">
+                    <svg data-aos-delay="500"  data-aos="zoom-in" id="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px" class="email-icon rotation">
                         <path d="M5.5,42h39c1.933,0,3.5-1.567,3.5-3.5v-27C48,9.567,46.433,8,44.5,8h-39C3.567,8,2,9.567,2,11.5v27C2,40.433,3.567,42,5.5,42z" />
                         <path d="M2,11.483c0,1.26,1.587,2.361,1.587,2.361L25,29l21.413-15.156c0,0,1.587-1.101,1.587-2.361" />
                         <polyline points="44.892,8.132 25,22 4.978,8.041" />
                         <line x1="43" y1="16.236" x2="43" y2="42" />
                         <line x1="7" y1="16.236" x2="7" y2="42" />
                     </svg>
-                    <svg data-aos="zoom-in" class="rotation" id="X" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    <svg  data-aos-delay="500"   data-aos="zoom-in" class="rotation" id="X" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="0,0,256,256" width="50px" height="50px" fill="var(--secondary)">
                     <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                     stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
@@ -98,7 +106,7 @@
             </g>
         </svg>
         <svg data-aos="zoom-in" class="rotation" id="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0,0,256,256" width="50px" height="50px" fill="var(--secondary)">
+            viewBox="0,0,256,256" width="50px" height="50px" fill="var(--secondary)" data-aos-delay="500">
             <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                 stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
                 font-family="none" font-weight="none" font-size="none" text-anchor="none"
@@ -281,6 +289,8 @@
 
 
     </section>
+</div>
+
     <script src="./script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -291,10 +301,10 @@
         loop:true,
       });
     </script>
- 
-    <script>
-      AOS.init();
-    </script>
+
+
+
+
 </body>
 
 </html>
