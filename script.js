@@ -33,10 +33,6 @@ window.addEventListener('load', function() {
   }, 3000); 
 });
 
-
-
-
-
 $Resume.addEventListener('click',()=>{
   window.open('https://docs.google.com/document/d/1x4GEzr6TwRsXTN43L4Ou4m0wfQmzPJu5ocDMn7U-oF4/edit?usp=sharinghttps://docs.google.com/document/d/1x4GEzr6TwRsXTN43L4Ou4m0wfQmzPJu5ocDMn7U-oF4/edit?usp=sharing', '_blank');
 })

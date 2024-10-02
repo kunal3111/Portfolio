@@ -106,7 +106,7 @@ body{
 .right{
     background-color:var(--primary);
     color: var(--secondary);
-    height:410vh;
+    height:360vh;
     width: 55vw;
     right: 0;
     position:absolute;

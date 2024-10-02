@@ -69,10 +69,10 @@
     right: 0;
     height: 2rem;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.237);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     align-content: center;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 
     /* box-shadow: 2px 2px 20px #006480; */
 }
