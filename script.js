@@ -62,7 +62,7 @@ $EmojiGallery.addEventListener('click', () => {
   window.open("https://kunal3111.github.io/Web-programming/emoji-gallery-kunal3111/", '_blank');
 });
 $Dominoes.addEventListener('click', () => {
-  window.open("https://kunal3111.github.io/Web-programming/dominoes-kunal3111-1/", '_blank');
+  window.open("https://kunal3111.github.io/Web-programming/ImageSearch/", '_blank');
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -93,3 +93,21 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 });
 
+// Dark mode toggle script
+const toggle = document.getElementById('toggle');
+const body = document.body;
+
+if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    toggle.checked = true;
+}
+
+toggle.addEventListener('change', () => {
+    if (toggle.checked) {
+        body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        body.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+    }
+});

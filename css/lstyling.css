@@ -111,7 +111,6 @@ color: var(--secondary);
 
 .navigation ul li a:hover {
   color:rgb(0, 153, 153);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .navigation ul li a:hover::before {
@@ -123,7 +122,6 @@ color: var(--secondary);
   text-decoration: none;
   font-weight: 300;
   transform: scale(1.2);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   animation: bounce 0.5s;
 }
 
@@ -147,14 +145,6 @@ color: var(--secondary);
 
 
 
-.email-icon {
-  fill: none;
-  stroke: var(--secondary);
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-}
-
-
 
 div.icons svg:hover {
   fill:var(--gloss);
@@ -162,7 +152,7 @@ div.icons svg:hover {
 
 div.icons .email-icon:hover {
   stroke: var(--gloss);
-  fill: none;
+  /* fill: none; */
 
 
 }

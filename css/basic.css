@@ -1,18 +1,21 @@
-:root{
-    --primary:rgb(6, 22, 28);
-    --secondary:rgb(222, 220, 220);
-    --gloss:rgb(0, 153, 153);
+:root {
+  --primary: rgb(80, 100, 110);
+  --secondary: rgb(255, 255, 255);
+  --gloss: rgb(0, 153, 153);
+  --dark-primary: rgb(2, 16, 21); /* Dark mode background color */
+  --dark-secondary: #ffffff; /* Dark mode text color */
 }
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .loading-screen {
   position: fixed;
- top: 0;
+  top: 0;
   right: 0;
-
   width: 100vw;
   height: 100vh;
   background-color: var(--primary);
@@ -44,14 +47,15 @@ box-sizing: border-box;
   animation: bluebar 1.5s infinite ease;
   background-color: var(--gloss);
 }
-.loading-animation{
+
+.loading-animation {
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
 
-.loading-screen{
+.loading-screen {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,53 +73,63 @@ box-sizing: border-box;
   }
 }
 
-
 #content {
   transition: opacity 0.5s ease-in-out;
 }
 
-
-body{
+body {
   background-color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
- 
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+.lrsections {
+  display: flex;
+  flex-direction: row;
 }
-.lrsections{
-    display: flex;
-    flex-direction: row;
-}
-.left{
-    background-color:var(--primary);
-    color: var(--secondary);
-    height: 100vh;
-    width: 45vw;
-    position: fixed;
-   
-    left: 0;
 
+.left {
+  background-color: var(--primary);
+  color: var(--secondary);
+  height: 100vh;
+  width: 45vw;
+  position: fixed;
+  left: 0;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
+
+.right {
+  background-color: var(--primary);
+  color: var(--secondary);
+  height: 380vh;
+  width: 55vw;
+  right: 0;
+  position: absolute;
+  overflow: clip;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode .left {
+  background-color: var(--dark-primary);
+  color: var(--dark-secondary);
+}
+
+.dark-mode .right {
+  background-color: var(--dark-primary);
+  color: var(--dark-secondary);
+}
+
+.StickyNavbar {
+  position: static;
+  display: none;
+}
+
 [data-aos="fade-up"] {
-    transition-duration: 2s; 
-    transition-delay: 0.5s;  
-  }
-  
+  transition-duration: 2s;
+  transition-delay: 0.5s;
+}
 
-.right{
-    background-color:var(--primary);
-    color: var(--secondary);
-    height:360vh;
-    width: 55vw;
-    right: 0;
-    position:absolute;
-    overflow: clip;    
-}
-.StickyNavbar{
-    position: static;       
-    display: none;
-}
 
   @keyframes rotate {
     from {
@@ -129,3 +143,74 @@ body{
   .rotation{
     animation: rotate 0.8s 6 linear;
   }
+
+/* Day-Night Toggle Styles */
+.day-night-toggle {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: #000000;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  z-index: 999; /* Ensure it's always on top */
+}
+
+.dark-mode .day-night-toggle {
+  background-color: #f3f3f7;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.toggle-ball {
+  position: absolute;
+  top: 3.5px;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 2px black;
+  border-radius: 50%;
+  transition: transform 0.5s;
+  z-index: 1000;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-ball {
+  transform: translateX(28px);
+}
+
+/* Sun and Moon Icon Styling */
+.sun-icon, .moon-icon {
+  width: 18px;
+  height: 18px;
+  stroke: #ffffff; /* Sun color */
+  fill: none;
+}
+
+.dark-mode .sun-icon {
+  stroke: #000000;
+}
+
+.moon-icon {
+  stroke: #ffffff;
+}
+
+.dark-mode .moon-icon {
+  stroke: #ffffff;
+}
