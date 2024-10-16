@@ -97,17 +97,26 @@ document.addEventListener('DOMContentLoaded', () => {
 const toggle = document.getElementById('toggle');
 const body = document.body;
 
+// Set the default theme to dark if no theme is set in localStorage
+if (!localStorage.getItem('theme')) {
+    localStorage.setItem('theme', 'dark');
+}
+
 if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
+    toggle.checked = false;
+} else {
+    body.classList.remove('dark-mode');
     toggle.checked = true;
 }
 
 toggle.addEventListener('change', () => {
     if (toggle.checked) {
-        body.classList.add('dark-mode');
-        localStorage.setItem('theme', 'light');
-    } else{
         body.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+    } else {
+        body.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark');
     }
 });
+
