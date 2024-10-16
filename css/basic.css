@@ -92,8 +92,8 @@ body {
 .left {
   background-color: var(--primary);
   color: var(--secondary);
-  height: 100vh;
   width: 45vw;
+  height: 100vh;
   position: fixed;
   left: 0;
   transition: background-color 0.5s ease, color 0.5s ease;
@@ -149,7 +149,7 @@ body {
   position: relative;
   width: 60px;
   height: 30px;
-  background-color: #000000;
+  background-color: #dddcdc;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -161,8 +161,9 @@ body {
 }
 
 .dark-mode .day-night-toggle {
-  background-color: #f3f3f7;
+ background-color: var( --dark-secondary);
 }
+/* background-color: #d8d8d8; */
 
 .toggle-checkbox {
   display: none;
@@ -199,7 +200,7 @@ body {
 .sun-icon, .moon-icon {
   width: 18px;
   height: 18px;
-  stroke: #ffffff; /* Sun color */
+  stroke: #000000; /* Sun color */
   fill: none;
 }
 
@@ -208,7 +209,7 @@ body {
 }
 
 .moon-icon {
-  stroke: #ffffff;
+  stroke: #000000;
 }
 
 .dark-mode .moon-icon {

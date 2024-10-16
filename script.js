@@ -106,7 +106,7 @@ toggle.addEventListener('change', () => {
     if (toggle.checked) {
         body.classList.add('dark-mode');
         localStorage.setItem('theme', 'light');
-    } else {
+    } else{
         body.classList.remove('dark-mode');
         localStorage.setItem('theme', 'dark');
     }

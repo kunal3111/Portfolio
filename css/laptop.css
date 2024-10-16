@@ -1,0 +1,13 @@
+@media screen and (min-width: 1282px) {
+
+ .navigation{
+    margin-top: 3.3rem;
+
+ }
+ div.icons{
+    margin-top: 5rem;
+ }
+ .right{
+    height: 350vh;
+ }
+}
