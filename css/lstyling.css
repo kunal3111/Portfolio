@@ -65,17 +65,13 @@ div.icons{
   padding: 0.3rem;
 }
 
-
-
-
-
 .navigation ul li a {
   position: relative;
   color: var(--secondary);
   text-decoration: none;
   padding: 5px 20px;
   padding-left: 0;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: color 300ms, transform 300ms, background 300ms, box-shadow 300ms;
 }
 
@@ -85,9 +81,9 @@ div.icons{
   left: 0;
   bottom: 0;
   width: 0;
-  height: 3px;
+  height: 3.5px;
   background-color:rgb(0, 153, 153);
-  transition: width 300ms;
+  transition: width 200ms;
 }
 
 .navigation ul li a:hover {
@@ -95,7 +91,7 @@ div.icons{
 }
 
 .navigation ul li a:hover::before {
-  width: 100%;
+  width: 10vw;
 }
 
 .navigation ul li a.active {
@@ -107,7 +103,7 @@ div.icons{
 }
 
 .navigation ul li a.active::before {
-  width: 100%;
+  width: 10vw;
 }
 
 @keyframes bounce {

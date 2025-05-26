@@ -34,7 +34,7 @@ window.addEventListener('load', function() {
 });
 
 $Resume.addEventListener('click',()=>{
-  window.open('https://docs.google.com/document/d/1x4GEzr6TwRsXTN43L4Ou4m0wfQmzPJu5ocDMn7U-oF4/edit?usp=sharinghttps://docs.google.com/document/d/1x4GEzr6TwRsXTN43L4Ou4m0wfQmzPJu5ocDMn7U-oF4/edit?usp=sharing', '_blank');
+  window.open('https://docs.google.com/document/d/1p3KwKAyG7JhBr7Nq7i-8pltpaHcY8lf1pjP4HQi5e8Q/edit?usp=sharing', '_blank');
 })
 
 $github.addEventListener('click',()=>{
